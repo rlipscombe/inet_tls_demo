@@ -2,9 +2,13 @@
   {server, [
     {certfile, "${HOSTNAME}.crt"},
     {keyfile, "${HOSTNAME}.key"},
+    {verify, verify_peer},
+    {cacertfile, "inet-tls-ca.crt"},
     {secure_renegotiate, true}
   ]},
   {client, [
+    {certfile, "${HOSTNAME}.crt"},
+    {keyfile, "${HOSTNAME}.key"},
     {verify, verify_peer},
     {cacertfile, "inet-tls-ca.crt"},
     {secure_renegotiate, true}

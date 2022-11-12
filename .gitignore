@@ -1,3 +1,4 @@
 erl_crash.dump
 *.crt
 *.key
+inet_tls.*.conf

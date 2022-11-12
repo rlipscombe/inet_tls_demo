@@ -1,7 +1,7 @@
 [
   {server, [
-    {certfile, "server.crt"},
-    {keyfile, "server.key"},
+    {certfile, "${HOSTNAME}.crt"},
+    {keyfile, "${HOSTNAME}.key"},
     {secure_renegotiate, true}
   ]},
   {client, [
